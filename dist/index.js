@@ -41,9 +41,11 @@ async function fetchReleases () {
     'X-GitHub-Api-Version': '2022-11-28'
   };
 
+  /*
   if (process.env.GITHUB_TOKEN) {
     headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
   }
+  */
 
   const resp = await fetch(url, {
     headers
